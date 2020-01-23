@@ -1,36 +1,8 @@
-[id="heart"] {
-  position: absolute;
-  left: -100vw;
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: white;
+    background-color: gray;
 }
-
-[for="heart"] {
-  color: #aab8c2;
-  cursor: pointer;
-  font-size: 20px;
-  align-self: center;  
-  transition: color 0.2s ease-in-out;
+.nav-pills .nav-link, .nav-pills .show > .nav-link {
+    color: gray;
+    background-color: white;
 }
-
-[for="heart"]:hover {
-  color: grey;
-}
-
-[for="heart"]::selection {
-  color: none;
-  background: transparent;
-}
-
-[for="heart"]::moz-selection {
-  color: none;
-  background: transparent;
-}
-
-[id="heart"]:checked + label {
-  color: #e2264d;
-  will-change: font-size;
-  animation: heart 0.5s cubic-bezier(.17, .05, .32, 2.0);
-}
-
-
-
-@keyframes heart {0%, 2% {font-size: 0;}}
